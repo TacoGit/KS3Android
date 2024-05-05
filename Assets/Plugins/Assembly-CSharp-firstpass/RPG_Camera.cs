@@ -83,7 +83,7 @@ public class RPG_Camera : MonoBehaviour
 
 	private void Start()
 	{
-		Screen.lockCursor = true;
+		//Screen.lockCursor = true;
 		//Cursor.visible = false;
 		MainCamera = GetComponent<Camera>();
 		distance = Mathf.Clamp(distance, 0.05f, distanceMax);
