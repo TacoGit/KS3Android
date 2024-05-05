@@ -1,6 +1,6 @@
-WebGL
+WindowsStandalone
 PlayerPath?
-C:/Users/tanos/Downloads/ks3
+C:/Users/tanos/Downloads/ks3/ks3.exe
 SceneListBegin?
 Assets/KuudereScene.unity
 SceneListEnd?
@@ -74,8 +74,6 @@ fb6e5628bc80bc3410e1719cf5ed8ccb Assembly-CSharp.dll:.SM_trailFade
 dc7c79d279c7db671b5343c1c88ec717 Assembly-CSharp-firstpass.dll:.AnimatedColor
 483f4fde2e4a9df95cf9f42ed3a9093c Assembly-CSharp-firstpass.dll:.UIProgressBar
 5121da114e2289a0fdaf5d5142fe08cc Assembly-CSharp-firstpass.dll:.DynamicBoneCollider
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 0d83c107303c6b93f63fd065301b35d8 Assembly-CSharp.dll:.API_Demo
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -116,7 +114,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.RealTime
 54febe63ec0fc0561e008734134abb28 Assembly-CSharp-firstpass.dll:.RPG_Controller
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PostEffectsBase
-1bf2e8ba2611149f3d6cf43b2baf9fd4 Assembly-CSharp.dll:Examples.FirstPersonExample
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -158,7 +155,6 @@ daabd8d8800a87cff11f866c4d06a232 Assembly-CSharp-firstpass.dll:.ContrastStretchE
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OpenURLOnClick
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BallMove
 1f9dfc14bbf548d256d3ee29ecf4a461 Assembly-CSharp-firstpass.dll:.UILocalize
 b657ff9ab0a5a185155f537c88f9f2bf Assembly-CSharp.dll:TouchControlsKit.TCKButton
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
@@ -186,7 +182,6 @@ fcffe9bbf1b7b7e4593e31031f78987b Assembly-CSharp.dll:.UISliderColors
 506e4317fa7fda8e42472530b0a2282a Assembly-CSharp-firstpass.dll:.UIFont
 22df741b1a3c6d3b215ca28ad83c5a3f Assembly-CSharp.dll:.AmbientObscurance
 b533a55bac6b0ef81fc95d63b2d4c3a9 Assembly-CSharp-firstpass.dll:.UIButtonScale
-7ed675ea893f8dd3551d5ec992b2873b Assembly-CSharp.dll:Examples.TwoDGun
 da5fe6826bf47fcc50f6f87edc426644 Assembly-CSharp.dll:.SunShafts
 a30beadf4d109f44144b9a9f42e61cbf Assembly-CSharp.dll:.Blur
 884bfbec2e6b28c923e45a3a37993bec Assembly-CSharp-firstpass.dll:.UIButtonKeys
@@ -209,7 +204,6 @@ f62d1e12c4ea2e5d19ca5a2c81b0bf32 Assembly-CSharp.dll:.TiltShiftHdr
 4177d3a1cc14f66e470633025cf3c8db Assembly-CSharp-firstpass.dll:.UISprite
 f0d54179fe98107022c3ed2627a08a18 Assembly-CSharp.dll:.LookAtTarget
 ac4b8da881863d2cabf10e05b6e01c0a Assembly-CSharp-firstpass.dll:.UIEventTrigger
-7ce0bbdd528d8a71494e5c230ed4c54e Assembly-CSharp.dll:.LevelLoader
 109118d2e688086df5525ff7d0778674 Assembly-CSharp-firstpass.dll:.UIScrollView
 b533a55bac6b0ef81fc95d63b2d4c3a9 Assembly-CSharp-firstpass.dll:.UIButtonRotation
 cc897e31f90a455da1ad6fffc97043f1 Assembly-CSharp.dll:.AntialiasingAsPostEffect
@@ -242,7 +236,6 @@ ac3e4723b2199a1a04a028276190ca7e Assembly-CSharp-firstpass.dll:.TweenHeight
 e4769f7f90b4953a6d3d59909d279ab5 Assembly-CSharp-firstpass.dll:.UIViewport
 649cef9362f0588635c5cc8ce80b9931 Assembly-CSharp-firstpass.dll:.PropertyBinding
 b3432dfe180f02232d7612fb366593d3 Assembly-CSharp.dll:.ColorCorrectionLut
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CarMove
 46409ae3731c3c22da8052a51565f6b2 Assembly-CSharp-firstpass.dll:.UISavedOption
 5ee6b3a9ddfd1b34a29e37bff36c7883 Assembly-CSharp.dll:.InvAttachmentPoint
 f2d1d8bd46ac314eebf726fd43c91eea Assembly-CSharp-firstpass.dll:.UIDragScrollView
@@ -251,7 +244,6 @@ f2d1d8bd46ac314eebf726fd43c91eea Assembly-CSharp-firstpass.dll:.UIDragScrollView
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 de4d9d052ba4d30c8e1d66d73b186762 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
-cc40ff8305a6d336ebbde73a0c401d5d Assembly-CSharp.dll:Examples.TwoDPlayerControl
 d5b9d7cb09fd653d6d764661e7877346 Assembly-CSharp.dll:TouchControlsKit.TCKSteeringWheel
 9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -273,7 +265,6 @@ f5ce04d51633a5a2e05a731aa45ef200 Assembly-CSharp-firstpass.dll:.MotionBlur
 c08b196716247885d3b27f7f282b2568 Assembly-CSharp-firstpass.dll:.ImageEffectBase
 a4ba336b18824674218b3458f2e4d35c Assembly-CSharp-firstpass.dll:.UIButtonColor
 83086ba0211ddfb14428d7c5d4a202d8 Assembly-CSharp-firstpass.dll:.UIKeyBinding
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.rocketLifetime
 7a616dbce92f73c40a3ca496077d8b39 Assembly-CSharp.dll:.ChatInput
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
@@ -340,5 +331,5 @@ d25057724e4b31ba030cceb84c72270b Assembly-CSharp-firstpass.dll:.AnimatedWidget
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.NGUIDebug
 c47b874166cb7c29911738f88c355337 Assembly-CSharp.dll:.SM_TransRimShaderIrisator
 d17ecbd7113facfe3f120c1e80e08d34 Assembly-CSharp.dll:.UIEquipmentSlot
-307d9f491fea791345eb6aa66e84c179 Assembly-CSharp.dll:Examples.TwoDCameraFollow
 bf0efa3a2b50052bc4430312d3cc0dad Assembly-CSharp.dll:.LagPosition
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AndroidCameraLock
