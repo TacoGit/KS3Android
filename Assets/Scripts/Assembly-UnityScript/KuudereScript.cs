@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityScript.Lang;
 using TouchControlsKit;
 
@@ -178,6 +179,13 @@ public class KuudereScript : MonoBehaviour
 			if (GetComponent<AudioSource>().clip != null && !(Timer <= GetComponent<AudioSource>().clip.length + 0.5f))
 			{
 				// GRAHH FUCK SUBTITLES () damn it ;(
+				// me, tanos, will fix the subtitles then
+				var subtitle = transform.Find("Main Camera/Panel/SubtitleLabel");
+
+				if (subtitle != null)
+				{
+					subtitle.gameObject.SetActive(false);
+				}
 			}
 			if (!(Timer <= GetComponent<AudioSource>().clip.length + 5f))
 			{
@@ -188,6 +196,7 @@ public class KuudereScript : MonoBehaviour
 					{
 						ID = UnityEngine.Random.Range(0, Extensions.get_length((System.Array)OsanaLines));
 						GetComponent<AudioSource>().clip = OsanaLines[ID];
+						GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = OsanaText[ID];
 						GetComponent<AudioSource>().Play();
 					}
 				}
@@ -205,6 +214,7 @@ public class KuudereScript : MonoBehaviour
 						ID++;
 					}
 					GetComponent<AudioSource>().clip = TsunLines[ID];
+					GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = TsunText[ID];
 					GetComponent<AudioSource>().Play();
 				}
 				else if (Himedere)
@@ -221,6 +231,7 @@ public class KuudereScript : MonoBehaviour
 						ID++;
 					}
 					GetComponent<AudioSource>().clip = HimeLines[ID];
+					GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = HimeText[ID];
 					GetComponent<AudioSource>().Play();
 				}
 				else if (Comment)
@@ -231,6 +242,7 @@ public class KuudereScript : MonoBehaviour
 						{
 							ID = UnityEngine.Random.Range(0, Extensions.get_length((System.Array)KuuComments));
 							GetComponent<AudioSource>().clip = KuuComments[ID];
+							GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = KuuCommentText[ID];
 							GetComponent<AudioSource>().Play();
 						}
 					}
@@ -248,6 +260,7 @@ public class KuudereScript : MonoBehaviour
 						{
 							ID = UnityEngine.Random.Range(0, Extensions.get_length((System.Array)KuuLines));
 							GetComponent<AudioSource>().clip = KuuLines[ID];
+							GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = KuuText[ID];
 							GetComponent<AudioSource>().Play();
 						}
 					}
@@ -257,6 +270,7 @@ public class KuudereScript : MonoBehaviour
 						{
 							ID = UnityEngine.Random.Range(0, Extensions.get_length((System.Array)KuuMurderLines));
 							GetComponent<AudioSource>().clip = KuuMurderLines[ID];
+							GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = KuuMurderText[ID];
 							GetComponent<AudioSource>().Play();
 						}
 					}
@@ -298,17 +312,19 @@ public class KuudereScript : MonoBehaviour
 				}
 				Timer = 10f;
 			}
-			if (Input.GetKeyDown("b"))
+			if (Input.GetKeyDown("b") || TCKInput.GetButtonDown("B"))
 			{
 				if (Tsundere)
 				{
 					GetComponent<AudioSource>().clip = TsunLines[5];
+					GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = TsunText[5];
 					GetComponent<AudioSource>().Play();
 					Timer = 0f;
 				}
 				else if (Himedere)
 				{
 					GetComponent<AudioSource>().clip = Hmphs[UnityEngine.Random.Range(0, 5)];
+					GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>().text = "Hmph" + new string('.', UnityEngine.Random.Range(0, 4));
 					GetComponent<AudioSource>().Play();
 					Timer = 0f;
 				}
@@ -426,7 +442,7 @@ public class KuudereScript : MonoBehaviour
 				FadeOut = true;
 			}
 		}
-		if (Input.GetKeyDown("c") || TCKInput.GetButtonDown("C"))
+		if (Input.GetKeyDown("c"))
 		{
 			Comment = true;
 		}
@@ -565,22 +581,20 @@ public class KuudereScript : MonoBehaviour
 
 	public virtual void UpdateSubtitleColor()
 	{
+		// I FUCKING HATE SUBTITLES GRAHH USE YOUR EARS PEOPLE!!
+		// > deaf people exist :(
+
+		GameObject subtitleSimulator = GameObject.Find("_TCKCanvas/SubtitleSimulator");
+		Text textComponent = GameObject.Find("_TCKCanvas/SubtitleSimulator").GetComponent<Text>();
+
 		if (OsanaLives)
-		{
-			// I FUCKING HATE SUBTITLES GRAHH USE YOUR EARS PEOPLE!!
-		}
-		else if (Tsundere)
-		{
-			// I FUCKING HATE SUBTITLES GRAHH USE YOUR EARS PEOPLE!!
-		}
-		else if (Himedere)
-		{
-			// I FUCKING HATE SUBTITLES GRAHH USE YOUR EARS PEOPLE!!
-		}
-		else
-		{
-			// I FUCKING HATE SUBTITLES GRAHH USE YOUR EARS PEOPLE!!
-		}
+            textComponent.color = new Color(1.0f, 0.75f, 0.25f, 1.0f);
+        else if (Tsundere)
+            textComponent.color = new Color(1.0f, 0.5f, 0.0f, 1.0f);
+        else if (Himedere)
+            textComponent.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        else
+            textComponent.color = new Color(0.25f, 0.75f, 1.0f, 1.0f);
 	}
 
 	public virtual void Main()
