@@ -16,6 +16,6 @@ Todo
 # Credits
 * [tanos](https://github.com/TacoGit) - Android port and fixes 🚧
 
-* [Frye/TyDev](https://twitter.com/TyDev_) - Decompiled source code and PS Vita port
+* [Ty](https://twitter.com/TyDotCS) - Decompiled source code and PS Vita port
 
 * YandereDev - Kuudere Simulator itself
