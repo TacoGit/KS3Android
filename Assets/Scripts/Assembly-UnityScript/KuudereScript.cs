@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityScript.Lang;
+using TouchControlsKit;
 
 [Serializable]
 public class KuudereScript : MonoBehaviour
@@ -174,7 +175,7 @@ public class KuudereScript : MonoBehaviour
 			Timer += Time.deltaTime;
 			if (GetComponent<AudioSource>().clip != null && !(Timer <= GetComponent<AudioSource>().clip.length + 0.5f))
 			{
-				// GRAHH FUCK SUBTITLES
+				// GRAHH FUCK SUBTITLES () damn it
 			}
 			if (!(Timer <= GetComponent<AudioSource>().clip.length + 5f))
 			{
@@ -265,7 +266,7 @@ public class KuudereScript : MonoBehaviour
 				PreviousID = ID;
 				Timer = 0f;
 			}
-			if (Input.GetKeyDown("k"))
+			if (Input.GetKeyDown("k") || TCKInput.GetButtonDown("K"))
 			{
 				if (Tsundere || Himedere)
 				{
@@ -275,7 +276,7 @@ public class KuudereScript : MonoBehaviour
 				}
 				Timer = 10f;
 			}
-			if (Input.GetKeyDown("t"))
+			if (Input.GetKeyDown("t") || TCKInput.GetButtonDown("T"))
 			{
 				if (!Tsundere)
 				{
@@ -285,7 +286,7 @@ public class KuudereScript : MonoBehaviour
 				}
 				Timer = 10f;
 			}
-			if (Input.GetKeyDown("h"))
+			if (Input.GetKeyDown("h") || TCKInput.GetButtonDown("H"))
 			{
 				if (!Himedere)
 				{
@@ -316,7 +317,7 @@ public class KuudereScript : MonoBehaviour
 					Timer = 0f;
 				}
 			}
-			if (Input.GetKeyDown("e"))
+			if (Input.GetKeyDown("e") || TCKInput.GetButtonDown("E"))
 			{
 				if (!Eyepatch.active)
 				{
@@ -327,7 +328,7 @@ public class KuudereScript : MonoBehaviour
 					Eyepatch.active = false;
 				}
 			}
-			if (Input.GetKeyDown("w"))
+			if (Input.GetKeyDown("w") || TCKInput.GetButtonDown("W"))
 			{
 				ColorID++;
 				if (ColorID == Colors.Length)
@@ -340,30 +341,7 @@ public class KuudereScript : MonoBehaviour
 				}
 				Comment = true;
 			}
-			if (Input.GetKeyDown("l") && GunPhase == 0)
-			{
-				LookDirection++;
-				if (LookDirection > 2)
-				{
-					LookDirection = 0;
-				}
-				Comment = true;
-			}
-			if (Input.GetKeyDown("f"))
-			{
-				if (!EyeCamera.active)
-				{
-					MainCamera.active = false;
-					EyeCamera.active = true;
-				}
-				else
-				{
-					MainCamera.active = true;
-					EyeCamera.active = false;
-				}
-				Comment = true;
-			}
-			if (Input.GetKeyDown("space"))
+			if (Input.GetKeyDown("space") || TCKInput.GetButtonDown("space"))
 			{
 				LookDirection = 0;
 				GunPhase++;
@@ -409,7 +387,7 @@ public class KuudereScript : MonoBehaviour
 					}
 				}
 			}
-			if (Input.GetKeyDown("o") && !SpawnOsana && !OsanaLives)
+			if (Input.GetKeyDown("o") && !SpawnOsana && !OsanaLives || TCKInput.GetButtonDown("O") && !SpawnOsana && !OsanaLives)
 			{
 				NewOsana = (GameObject)UnityEngine.Object.Instantiate(Osana, new Vector3(0f, 5f, -2.5f), Quaternion.identity);
 				SpawnOsana = true;
@@ -446,7 +424,7 @@ public class KuudereScript : MonoBehaviour
 				FadeOut = true;
 			}
 		}
-		if (Input.GetKeyDown("c"))
+		if (Input.GetKeyDown("c") || TCKInput.GetButtonDown("C"))
 		{
 			Comment = true;
 		}

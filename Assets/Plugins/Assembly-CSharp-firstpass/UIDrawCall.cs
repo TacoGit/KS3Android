@@ -683,7 +683,11 @@ public class UIDrawCall : MonoBehaviour
 			return uIDrawCall;
 		}
 		GameObject gameObject = new GameObject(name);
-		UnityEngine.Object.DontDestroyOnLoad(gameObject);
+		try {
+			UnityEngine.Object.DontDestroyOnLoad(gameObject);
+		} catch {
+			//just to clear console
+		}
 		UIDrawCall uIDrawCall2 = gameObject.AddComponent<UIDrawCall>();
 		mActiveList.Add(uIDrawCall2);
 		return uIDrawCall2;

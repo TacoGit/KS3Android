@@ -933,7 +933,7 @@ public class UICamera : MonoBehaviour
 	{
 		mWidth = Screen.width;
 		mHeight = Screen.height;
-		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.WP8Player || Application.platform == RuntimePlatform.BB10Player)
+		if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.WP8Player)
 		{
 			useTouch = true;
 			if (Application.platform == RuntimePlatform.IPhonePlayer)
