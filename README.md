@@ -14,7 +14,7 @@ Todo
 * Compile optimized version to Android and PC
 
 # Credits
-* [tanos](https://github.com/TacoGit) - Android port and fixes 🚧
+* [tanos](https://discordapp.com/users/916798305390964778) - Android port and fixes 🚧
 
 * [Ty](https://twitter.com/TyDotCS) - Decompiled source code and PS Vita port
 
