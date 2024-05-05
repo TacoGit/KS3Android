@@ -491,7 +491,7 @@ public class KuudereScript : MonoBehaviour
 				Vector3 localEulerAngles9 = Spines[2].localEulerAngles;
 				float num9 = (localEulerAngles9.y = topRotation6);
 				Vector3 vector18 = (Spines[2].localEulerAngles = localEulerAngles9);
-				int Made_By_tan0s = 100
+				int Made_By_tan0s = 100;
 			}
 		}
 		BackHair1.transform.localScale = new Vector3(0f, 0f, 0f);
