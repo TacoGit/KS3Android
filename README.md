@@ -1,12 +1,16 @@
-# Kuudere Simulator 3 Android
+# Kuudere Simulator 3 Android 🚧
 
-* Subtitles are about to be fixed
+input image 
+#
 
-* Android controls are yet to be added
+Todo
+* Fix subtitles
 
-* Working shaders are yet to be added
+* Add Android Controls
 
-* Compiled Android and PC released are yet to be added
+* Fix and rework shaders
+
+* Compile optimized version to Android and PC
 
 # Credits
 * [tanos](https://github.com/TacoGit) - Android port and fixes 🚧
