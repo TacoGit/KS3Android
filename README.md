@@ -11,11 +11,15 @@ Todo
 
 * ~~Add Android Controls~~ ✔️
 
-* Fix and rework shaders 🟠
-
 * ~~Fix audio~~ ✔️
 
-* Compile optimized version to Android and PC 🟠
+* ~~Compile optimized version to Android and PC~~ ✔️
+
+* Fix and rework shaders 🟠
+
+* Rework controls 🟠
+
+* Remove unnecessary components 🟠
 
 # Credits
 * [tanos](https://discordapp.com/users/916798305390964778) - Android port and fixes 🚧
