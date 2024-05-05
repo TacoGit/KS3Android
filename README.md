@@ -1,15 +1,16 @@
-# Kuudere Simulator 3 Decomp
+# Kuudere Simulator 3 Android
 
-* According to archive.org this is like a yandere sim test build or some shit idfk
+* Subtitles are about to be fixed
 
-* Controls are in the Controls.md file
+* Android controls are yet to be added
 
-* Subtitles are hella broken
+* Working shaders are yet to be added
 
-* Kuudere Simulator is a deep, complex, intricate, multi-layered, multi-faceted game that will take decades to master. The guide in Controls.md should help you.
+* Compiled Android and PC released are yet to be added
 
 # Credits
+* [tanos](https://github.com/TacoGit) - Android port and fixes 🚧
 
-* [Frye/TyDev](https://twitter.com/TyDev_) - Decomp + Vita Port (Coming soon!)
+* [Frye/TyDev](https://twitter.com/TyDev_) - Decompiled source code and PS Vita port
 
-* YandereDev - Original Game I think
+* YandereDev - Kuudere Simulator itself
