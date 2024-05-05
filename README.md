@@ -5,15 +5,16 @@ Kuudere Simulator 3 is a simple, sandbox game by YandereDev where the player can
 ![tanos-frontend](https://raw.githubusercontent.com/TacoGit/KS3Android/main/thumb.png)
 
 Todo
-* Fix subtitles
+✔️ Success. 🟠 Working on it. 🔴 Lowest priority.
+* Fix subtitles 🟠
 
 * ~~Add Android Controls~~ ✔️
 
-* Fix and rework shaders
+* Fix and rework shaders 🟠
 
 * ~~Fix audio~~ ✔️
 
-* Compile optimized version to Android and PC
+* Compile optimized version to Android and PC 🔴
 
 # Credits
 * [tanos](https://discordapp.com/users/916798305390964778) - Android port and fixes 🚧
