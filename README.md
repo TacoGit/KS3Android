@@ -21,7 +21,7 @@ Todo
 
 * Fix motion blur and bloom 🟠
 
-* Fix APK for Android 11 and above (requires adb to install for now)
+* Fix APK for Android 11 and above (requires adb to install for now) 🟠
 
 # Credits
 * [tanos](https://discordapp.com/users/916798305390964778) - Android port and fixes 🚧
