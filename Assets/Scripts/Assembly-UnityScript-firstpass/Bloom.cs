@@ -258,7 +258,7 @@ public class Bloom : PostEffectsBase
 				Graphics.Blit(temporary2, temporary4, blurAndFlaresMaterial, 3);
 				blurAndFlaresMaterial.SetVector("_Offsets", new Vector4(num6 * num8, num7 * num8, 0f, 0f));
 				blurAndFlaresMaterial.SetFloat("_StretchWidth", hollyStretchWidth);
-				Graphics.Blit(temporary4, temporary2, blurAndFlaresMaterial, 1);
+				//Graphics.Blit(temporary4, temporary2, blurAndFlaresMaterial, 1);
 				blurAndFlaresMaterial.SetFloat("_StretchWidth", hollyStretchWidth * 2f);
 				Graphics.Blit(temporary2, temporary4, blurAndFlaresMaterial, 1);
 				blurAndFlaresMaterial.SetFloat("_StretchWidth", hollyStretchWidth * 4f);
@@ -288,7 +288,7 @@ public class Bloom : PostEffectsBase
 		screenBlend.SetTexture("_ColorBuffer", source);
 		if (quality > BloomQuality.Cheap)
 		{
-			Graphics.Blit(temporary3, temporary);
+			//Graphics.Blit(temporary3, temporary);
 			Graphics.Blit(temporary, destination, screenBlend, pass);
 		}
 		else
@@ -299,6 +299,9 @@ public class Bloom : PostEffectsBase
 		RenderTexture.ReleaseTemporary(temporary2);
 		RenderTexture.ReleaseTemporary(temporary3);
 		RenderTexture.ReleaseTemporary(temporary4);
+
+		// fix mem laek v2
+		Debug.ClearDeveloperConsole();
 	}
 
 	private void AddTo(float intensity_, RenderTexture from, RenderTexture to)

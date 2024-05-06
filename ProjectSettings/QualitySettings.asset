@@ -95,10 +95,7 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms:
-    - Standalone
-    - WebGL
-    - Android
+    excludedTargetPlatforms: []
   - serializedVersion: 2
     name: Good
     pixelLightCount: 2
@@ -156,8 +153,8 @@ QualitySettings:
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms:
     - Standalone
-    - Android
     - WebGL
+    - Android
   - serializedVersion: 2
     name: Fantastic
     pixelLightCount: 4
@@ -216,10 +213,7 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms:
-    - Standalone
-    - Android
-    - WebGL
+    excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
     Android: 2
     Nintendo 3DS: 5

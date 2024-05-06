@@ -220,7 +220,7 @@ public class Tonemapping : PostEffectsBase
 		}
 		adaptionSpeed = ((adaptionSpeed >= 0.001f) ? adaptionSpeed : 0.001f);
 		tonemapMaterial.SetFloat("_AdaptionSpeed", adaptionSpeed);
-		Graphics.Blit(source2, rt, tonemapMaterial, (!flag) ? 2 : 3);
+		//Graphics.Blit(source2, rt, tonemapMaterial, (!flag) ? 2 : 3);
 		middleGrey = ((middleGrey >= 0.001f) ? middleGrey : 0.001f);
 		tonemapMaterial.SetVector("_HdrParams", new Vector4(middleGrey, middleGrey, middleGrey, white * white));
 		tonemapMaterial.SetTexture("_SmallTex", rt);
